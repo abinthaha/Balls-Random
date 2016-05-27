@@ -1,3 +1,6 @@
+body {
+	background-image: url('creative-rain_0.jpg');
+}
 #balls_container {
 	list-style: none;
 	padding: 0;
@@ -7,16 +10,23 @@
 	height: 500px;
 }
 #balls_container li {
-	display: inline-block;
+	position:relative;
+    display:inline-block;
+    border-radius: 50% ;
+    background-image: url('bubble.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+	/*display: inline-block;
 	width: 20px;
 	height: 20px;
 	margin: 5px;
 	border-radius: 50%;
-	background-color: red;
-	/*-webkit-animation: move 2.5s ease infinite, ;
-    animation: move 2.5s ease infinite;*/
+	background-color: red;*/
+	-webkit-animation: scale 2.5s ease infinite, ;
+    animation: scale 2.5s ease infinite;
 }
-
 @-webkit-keyframes move {
     0%   { 
         -webkit-transform: translate(1px, 1px)  /* Chrome, Opera 15+, Safari 3.1+ */
