@@ -6,7 +6,7 @@ body {
     height: auto;
     display: inline-block;
 }
-.box{
+.bubbles {
     position:relative;
     font-size:10px;
     top:40px;

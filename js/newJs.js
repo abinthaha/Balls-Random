@@ -8,7 +8,7 @@ $(document).ready(function() {
     magnet = 10000;
 
     for (var i = 1; i <= 50; i++) {
-        $('#balls_container').append("<li class='box'></li>");
+        $('#balls_container').append("<li class='bubbles'></li>");
         var size = Math.floor((Math.random() * 100) + 40);
         $('#balls_container li:last-child').css('height', size+'px');
         $('#balls_container li:last-child').css('width', size+'px');
@@ -20,14 +20,14 @@ $(document).ready(function() {
     });
     
 
-$('.box').each(function(index, el){
+$('.bubbles').each(function(index, el){
 $(el).data( "homex", parseInt($(el).position().left));
 $(el).data( "homey", parseInt($(el).position().top));
 });
 
-$('.box').css('position','absolute');
+$('.bubbles').css('position','absolute');
     setInterval(function () {
-        $('.box').each(function(index, el){
+        $('.bubbles').each(function(index, el){
             el = $(el);
             position = el.position();
             x0 = el.offset().left;
