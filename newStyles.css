@@ -1,0 +1,23 @@
+body {
+    background-image: url('creative-rain_0.jpg');
+}
+#balls_container {
+    width: 1080px;
+    height: auto;
+    display: inline-block;
+}
+.box{
+    position:relative;
+    font-size:10px;
+    top:40px;
+    left:40px;
+    display:inline-block;
+    margin:20px;
+    text-align:center;
+    line-height:20px;
+    background-image: url('bubble.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html,body{margin:0; padding:0;}
