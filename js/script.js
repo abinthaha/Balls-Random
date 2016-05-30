@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	var mouse = {'x': 0, 'y': 0},
-		magnet = 10000,
+		magnet = 100,
 		forcex = 0,
 		forcey = 0,
 		homex = 0,
